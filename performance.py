@@ -76,9 +76,9 @@ def calcular(pathresult,pathlabels):
     
 def main(_arg):
     results = sorted(glob.glob(FLAGS.outputDet))
-    labels = sorted(glob.glob(FLAGS.annotations))
+    labels  = sorted(glob.glob(FLAGS.annotations))
+
     for result, label in zip(results,labels):
-        
         calcular(result,label)
        
 
